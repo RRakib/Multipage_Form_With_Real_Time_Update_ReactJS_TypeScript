@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+.App .multipageForm{
+  width: 75%;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.App .multipageForm .pages{
+  width: 95%;
+  padding: 10px;
+  text-align: left;
+  position: relative;
+  background: #ddd;
+}
