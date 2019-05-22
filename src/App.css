@@ -1,3 +1,6 @@
+h2,h3,h4{
+  color: #444;
+}
 .App {
   text-align: center;
 }
@@ -11,6 +14,39 @@
   width: 95%;
   padding: 10px;
   text-align: left;
+  border-radius: 5px;
   position: relative;
   background: #ddd;
+}
+.App .multipageForm .pages .fields{
+  display: grid;
+  margin: 5px 0;
+  grid-template-columns: repeat(2, 1fr);
+}
+.App .multipageForm .pages .fields input{
+  height: 25px;
+  padding: 10px;
+  outline: none;
+  background: #eee;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.App .multipageForm .pages .buttonContainer{
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+}
+.App .multipageForm .pages .buttonContainer button{
+  width: 100px;
+  margin: 0 5px;
+  color: #eee;
+  padding: 10px 0;
+  font-size: 19px;
+  border-radius: 45px;
+  border:1px solid #444;
+  background: linear-gradient(45deg, #5600ff, #7a00ff);
+}
+.App .multipageForm .pages .buttonContainer button .fas{
+  margin: 0 5px;
 }
