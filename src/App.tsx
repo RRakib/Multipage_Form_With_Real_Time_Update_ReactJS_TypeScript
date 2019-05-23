@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className="multipageForm">
         <div className="pages">
-          <h3>Your Personal Information</h3>
+          <h3><i className="fas fa-user-tie" style={{color: 'purple', marginRight : 7, fontSize: 20}}></i>Your Personal Information</h3>
           <div className="fields">
             <p>First Name</p>
             <input 
@@ -26,8 +26,8 @@ function App() {
             />
           </div>
           <div className="buttonContainer">
-            <button><i class="fas fa-angle-left"></i>Prev</button>
-            <button>Next<i class="fas fa-angle-right"></i></button>
+            <button><i className="fas fa-angle-left"></i>Prev</button>
+            <button>Next<i className="fas fa-angle-right"></i></button>
           </div>
         </div>
         <div className="pages">
