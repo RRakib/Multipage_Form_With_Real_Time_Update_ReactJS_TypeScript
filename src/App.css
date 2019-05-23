@@ -21,7 +21,7 @@ h2,h3,h4{
 .App .multipageForm .pages .fields{
   display: grid;
   margin: 5px 0;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 35% 65%;
 }
 .App .multipageForm .pages .fields input{
   height: 25px;
@@ -38,7 +38,8 @@ h2,h3,h4{
   text-align: center;
 }
 .App .multipageForm .pages .buttonContainer button{
-  width: 100px;
+  width: 95px;
+  outline: none;
   margin: 0 5px;
   color: #eee;
   padding: 10px 0;
