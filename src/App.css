@@ -10,13 +10,67 @@ h2,h3,h4{
   display: grid;
   grid-template-columns: 70% 30%;
 }
+.App .indexedStep{
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 20px;
+  background: #acacac;
+}
+.App .accomplished{
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 20px;
+  background: #0e94ce;
+}
+.App .RSPBprogressBar{
+  margin: 15px 0 25px;
+}
 .App .multipageForm .pages{
-  width: 95%;
-  padding: 10px;
+  width: 93%;
+  padding: 15px;
   text-align: left;
   border-radius: 5px;
   position: relative;
-  background: #ddd;
+  background: #eee;
+}
+.App .multipageForm .realTimeContainer{
+  height: 300px;
+  overflow-y: auto;
+}
+.App .multipageForm .realTimeContainer .cards{
+  padding: 10px 10px;
+  margin-bottom: 5px;
+  background: #fff;
+  border-radius: 5px;
+}
+.App .multipageForm .realTimeContainer .subReal{
+  width: 100%;
+  font-size: 85px;
+  padding-top: 65px;
+  color: #7d8dee;
+  text-align: center;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: rgba(0,0,0,0.1);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb{
+  width: 15px;
+  transition: .5s;
+  border-radius: 20px;
+  background: #7d8dee;
+}
+.App .multipageForm .realTimeContainer .cards h4{
+  margin: 5px 0 10px;
+  color: #7d8dee;
+}
+.App .multipageForm .pages .sucess{
+  color: #555;
+  padding: 68.5px 0;
+  text-align: center;
 }
 .App .multipageForm .pages .fields{
   display: grid;
@@ -27,7 +81,7 @@ h2,h3,h4{
   height: 25px;
   padding: 10px;
   outline: none;
-  background: #eee;
+  background: #fff;
   border-radius: 5px;
   border: 1px solid #aaa;
 }
@@ -46,7 +100,7 @@ h2,h3,h4{
   font-size: 19px;
   border-radius: 45px;
   border:1px solid #444;
-  background: linear-gradient(45deg, #5600ff, #7a00ff);
+  background: linear-gradient(45deg, #8e2de2, #4a00e0);
 }
 .App .multipageForm .pages .buttonContainer button .fas{
   margin: 0 5px;

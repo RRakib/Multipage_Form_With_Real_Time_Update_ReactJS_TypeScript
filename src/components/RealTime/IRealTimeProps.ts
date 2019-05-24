@@ -1,1 +1,4 @@
-export interface IRealTimeProps{} 
+export interface IRealTimeProps{
+    dispatch: any,
+    state: any
+} 
