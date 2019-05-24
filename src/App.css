@@ -20,7 +20,7 @@ h2,h3,h4{
   color: #fff;
   padding: 3px 8px;
   border-radius: 20px;
-  background: #0e94ce;
+  background: #6c54f2;
 }
 .App .RSPBprogressBar{
   margin: 15px 0 25px;
@@ -47,7 +47,7 @@ h2,h3,h4{
   width: 100%;
   font-size: 85px;
   padding-top: 65px;
-  color: #7d8dee;
+  color: #6c54f2;
   text-align: center;
 }
 ::-webkit-scrollbar{
@@ -66,6 +66,13 @@ h2,h3,h4{
 .App .multipageForm .realTimeContainer .cards h4{
   margin: 5px 0 10px;
   color: #7d8dee;
+}
+.App .multipageForm .pages h3{
+  margin: 0;
+  color: #eee;
+  padding: 25px 5px;
+  border-radius: 5px;
+  background: #6c54f2;
 }
 .App .multipageForm .pages .sucess{
   color: #555;

@@ -52,7 +52,7 @@ function App(props:any) {
     <div className="App">
       <div className="multipageForm">
         <div className="pages">
-          <h3><i className="fas fa-user-tie" style={{color: 'purple', marginRight : 7, fontSize: 20}}></i>Your Personal Information</h3>
+          <h3><i className="fas fa-user-tie" style={{color: '#f0f3ff', marginRight : 7, fontSize: 25}}></i>Your Personal Information</h3>
           
           <div id='pages'>
           <ProgressBar percent={state.progress}>
