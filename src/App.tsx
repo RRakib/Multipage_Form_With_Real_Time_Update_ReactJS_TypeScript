@@ -1,7 +1,9 @@
 import './App.css'
+import { STORE_DATA } from "./Store/Type/type"
 import {connect} from "react-redux"
-import "react-step-progress-bar/styles.css"
 import React , {useState} from 'react'
+import "react-step-progress-bar/styles.css"
+import {mainAction} from './Store/Action/mainAction'
 import RealTime from "./components/RealTime/RealTime"
 import { ProgressBar, Step } from 'react-step-progress-bar'
 import FirstPage from "./components/Pages/FirstPage/firstPage"
@@ -29,7 +31,9 @@ function App(props:any) {
     }))
     const {firstName, lastName, middleName, age, university, profession, github, yOe} = state
     const payload = {firstName, lastName, middleName, age, university,profession, github, yOe}
-    props.reduce(payload)
+
+    const dispatch = props.dispatch
+    dispatch(mainAction(STORE_DATA, payload))
   }
   const handleClickPrev = () => {
     setState((prevState) => ({
@@ -127,9 +131,7 @@ function App(props:any) {
 }
 
 
-const mapDispatchToProps = (dispatch : any) => ({
-  reduce : (data:{}) => dispatch({type : "STORE_DATA", payload : data})
-})
+const mapStateToProps = (state: any) => (state) 
 
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps)(App);
